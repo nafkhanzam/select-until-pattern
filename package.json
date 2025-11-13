@@ -1,0 +1,53 @@
+{
+  "name": "select-until-pattern",
+  "displayName": "select-until-pattern",
+  "description": "",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Moch. Nafkhan Alzamzami",
+    "email": "nafkhanalzamzami@gmail.com",
+    "url": "https://www.nafkhanzam.com/"
+  },
+  "repository": {
+    "url": "https://github.com/nafkhanzam/select-until"
+  },
+  "engines": {
+    "vscode": "^1.105.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "select-until-pattern.select-until",
+        "title": "Select Until"
+      },
+      {
+        "command": "select-until-pattern.select-backwards-until",
+        "title": "Select Backwards Until"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.46.3",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
