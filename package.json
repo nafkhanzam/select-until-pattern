@@ -1,6 +1,6 @@
 {
-  "name": "select-until-pattern",
-  "displayName": "select-until-pattern",
+  "name": "select-forward-backward-until-pattern",
+  "displayName": "select-forward-backward-until-pattern",
   "description": "",
   "version": "0.0.1",
   "license": "MIT",
@@ -23,15 +23,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "select-until-pattern.select-until",
+        "command": "select-forward-backward-until-pattern.select-until",
         "title": "Select Until"
       },
       {
-        "command": "select-until-pattern.select-backwards-until",
+        "command": "select-forward-backward-until-pattern.select-backwards-until",
         "title": "Select Backwards Until"
       }
     ]
   },
+  "publisher": "nafkhanzam",
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
